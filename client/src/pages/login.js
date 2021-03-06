@@ -40,7 +40,7 @@ function Login() {
 
   const submitLogin = () => {
     let status;
-    fetch("/landing", {
+    fetch("/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -81,7 +81,7 @@ function Login() {
               name="email"
               autoComplete="email"
               autoFocus
-              onChange={e => setPassword(e.target.value)}
+              onChange={e => setUsername(e.target.value)}
             />
             <TextField
               variant="outlined"
@@ -105,6 +105,7 @@ function Login() {
               variant="contained"
               color="primary"
               className={classes.submit}
+              onClick={submitLogin}
             >
               Sign In
             </Button>
