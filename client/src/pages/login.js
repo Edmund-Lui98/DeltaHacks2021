@@ -2,6 +2,9 @@ import { FormControl, TextField, Button, Typography, Avatar, CssBaseline, FormCo
 
 import React, { useState, useEffect } from "react";
 import { makeStyles } from '@material-ui/core/styles';
+import SignUp from "./signup";
+import { Route, useHistory } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -116,9 +119,12 @@ function Login() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                {/* <Link href="./signup.js" variant="body2">
                   {"Don't have an account? Sign Up"}
-                </Link>
+                </Link> */}
+                <Button onClick={handleClick} variant="body2">
+                  {"Don't have an account? Sign Up"}
+                </Button>
               </Grid>
             </Grid>
           </form>

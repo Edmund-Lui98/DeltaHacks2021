@@ -13,6 +13,7 @@ function App() {
     <MuiThemeProvider theme={theme}>
       <BrowserRouter>
         <Route path="/" component={login} />
+        <Route path='/' component={LandingPage} />
       </BrowserRouter>
     </MuiThemeProvider>
   );
