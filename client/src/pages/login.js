@@ -122,9 +122,9 @@ function Login() {
                 {/* <Link href="./signup.js" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link> */}
-                <Button onClick={handleClick} variant="body2">
+                <Link href="./signup" variant="body2">
                   {"Don't have an account? Sign Up"}
-                </Button>
+                </Link>
               </Grid>
             </Grid>
           </form>

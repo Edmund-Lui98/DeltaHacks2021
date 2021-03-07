@@ -7,13 +7,14 @@ import LandingPage from "./pages/Landing";
 import login from "./pages/login";
 
 import "./App.css";
+import SignUp from "./pages/signup";
 
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <BrowserRouter>
-        <Route path="/" component={login} />
-        <Route path='/' component={LandingPage} />
+        <Route path="/" exact component={login} />
+        <Route path='/signup' component={SignUp} />
       </BrowserRouter>
     </MuiThemeProvider>
   );
