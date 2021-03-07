@@ -114,6 +114,7 @@ class Timer extends Component {
                     </div>
                 <TaskList></TaskList>
             </div>
+            </div>
 
             
         )
