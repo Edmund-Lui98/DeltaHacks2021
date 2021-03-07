@@ -1,7 +1,11 @@
 import { FormControl, TextField, Button, Typography, Avatar, CssBaseline, FormControlLabel, Checkbox, Link, Paper, Box, Grid} from "@material-ui/core";
 
 import React, { useState, useEffect } from "react";
-import { makeStyles} from '@material-ui/core/styles';
+
+import { makeStyles } from '@material-ui/core/styles';
+import SignUp from "./signup";
+import { Route, useHistory } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,7 +43,7 @@ function Login() {
 
   const submitLogin = () => {
     let status;
-    fetch("/landing", {
+    fetch("/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -80,7 +84,7 @@ function Login() {
               name="email"
               autoComplete="email"
               autoFocus
-              onChange={e => setPassword(e.target.value)}
+              onChange={e => setUsername(e.target.value)}
             />
             <TextField
               variant="outlined"
@@ -104,6 +108,7 @@ function Login() {
               variant="contained"
               color="primary"
               className={classes.submit}
+              onClick={submitLogin}
             >
               Sign In
             </Button>
@@ -114,7 +119,10 @@ function Login() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                {/* <Link href="./signup.js" variant="body2">
+                  {"Don't have an account? Sign Up"}
+                </Link> */}
+                <Link href="./signup" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
