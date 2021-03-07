@@ -48,7 +48,7 @@ class Timer extends Component {
                     }))
                 }
             }
-            if (this.state.minutes == 0 && this.state.seconds == 0) { //when timer is done
+            if (this.state.minutes === 0 && this.state.seconds === 0) { //runs when timer is done
                 clearInterval(this.myInterval);
                 if (this.state.onStudy) {
                     this.setState((prevState) => ({
@@ -56,6 +56,7 @@ class Timer extends Component {
                         seconds: 0,
                         onStudy: false
                     }));
+                    //add code in here regarding points/currency system
                 } else if (!this.state.onStudy) {
                     this.setState((prevState) => ({
                         minutes: this.state.studyMinutes,
