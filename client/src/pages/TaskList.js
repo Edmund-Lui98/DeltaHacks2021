@@ -43,11 +43,11 @@ class TaskList extends Component {
     render() {
         return (
             <div>
-                <h1>Tasks</h1>
+                <h1 className="tasktitle">Tasks</h1>
                 {
                     this.state.tasks.length === 0 ? (
                         <div>
-                            <span>No Tasks</span>
+                            <span className="tasktext">No Tasks</span>
                         </div>
                     ) : (
                             this.state.tasks.map((task) => (
@@ -65,7 +65,7 @@ class TaskList extends Component {
                      Estimated Time (minutes): <input type="number" placeholder="Minutes" name="taskDuration"></input>
                     <button>Add Task</button>
                 </form>
-                {this.state.error && <p>{this.state.error}</p>}
+                {this.state.error && <p className="tasktext">{this.state.error}</p>}
             </div>
         )
     }

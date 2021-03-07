@@ -6,3 +6,13 @@
     background-color: rgb(69, 86, 143);
     padding-top: 200px;
 }
+
+.tasktitle{
+    color: red;
+}
+
+.taskItem {
+    background: darkgray;
+    width: 50%;
+    margin: auto;
+}

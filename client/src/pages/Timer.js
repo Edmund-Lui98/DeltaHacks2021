@@ -58,7 +58,7 @@ class Timer extends Component {
                         seconds: 0,
                         onStudy: false
                     }));
-                    //add code in here regarding points/currency system
+                    //add code in here regarding points/currency system - the time spent studying is gotten by this.state.studyMinutes
                 } else if (!this.state.onStudy) {
                     this.setState((prevState) => ({
                         minutes: this.state.studyMinutes,

@@ -7,10 +7,10 @@ class TaskItem extends Component {
     }
     render() {
         return (
-            <div>
-                <h4>
-                    {this.props.taskName}.....
-                    {this.props.taskDuration}...
+            <div className="taskItem">
+                <h4 className="taskitemText">
+                    {this.props.taskName}&nbsp;&nbsp;
+                    {this.props.taskDuration}&nbsp;&nbsp;
                     <button onClick={(e) => {
                         this.props.completeTask({
                             taskName: this.props.taskName,
