@@ -1,8 +1,59 @@
 .temp {
-    text-align: center
+    background-color: #3f51b5;
+    text-align: center;
 }
 
 .timer{
-    background-color: rgb(69, 86, 143);
-    padding-top: 200px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 65px;
+    color: #97a2e2;
+}
+
+.StartTimer{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #97a2e2;
+    color: #3f51b5;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.EndTimer{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #97a2e2;
+    color: #3f51b5;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:   
+}
+
+.StudyTimer{
+    font-size: 16px;
+    font-weight: bold;
+    color: #97a2e2;
+
+}
+
+.BreakTimer{
+    font-size: 16px;
+    font-weight: bold;
+    color: #97a2e2;
+}
+
+.Empty{
+    color: #97a2e2;
+
+}
+
+.AddBtn{
+
 }

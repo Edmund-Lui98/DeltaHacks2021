@@ -10,15 +10,14 @@ import Timer from "./pages/Timer";
 import "./App.css";
 import SignUp from "./pages/signup";
 
-import Timer from "./pages/Timer"
-
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <BrowserRouter>
-        <Route path="/" component={login} exact={true}/>
+        {/* <Route path="/" component={login} exact={true}/>
         <Route path="/main" component={Timer} />
-        <Route path='/signup' component={SignUp} />
+        <Route path='/signup' component={SignUp} /> */}
+        <Route path='/Timer' component={Timer} />
       </BrowserRouter>
     </MuiThemeProvider>
   );

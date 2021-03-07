@@ -94,11 +94,19 @@ class Timer extends Component {
 
         return (
             <div className= "temp">
-                <h1 className= "timer">Time: {this.state.minutes < 10 ? `0${this.state.minutes}` : this.state.minutes}:{this.state.seconds < 10 ? `0${this.state.seconds}` : this.state.seconds}</h1>
-                <button onClick={this.startTimer}>Study</button>
-                <button onClick={this.resetTimer}>Reset</button>
-                <p>Study Time:</p><input type="number" value={this.state.studyMinutes} onChange={this.onStudyMinsChange}></input>
-                <p>Break Time:</p><input type="number" value={this.state.breakMinutes} onChange={this.onBreakMinsChange}></input>
+                <h1 className= "timer">{this.state.minutes < 10 ? `0${this.state.minutes}` : this.state.minutes}:{this.state.seconds < 10 ? `0${this.state.seconds}` : this.state.seconds}</h1>
+                <button className= "StartTimer" onClick={this.startTimer}>
+                    Study</button>
+                <button className= "EndTimer" onClick={this.resetTimer}>
+                    Reset</button>
+                <div className= "StudyTimer">
+                    <p>Study Time:</p>
+                    <input type="number" value={this.state.studyMinutes} onChange={this.onStudyMinsChange}></input>
+                </div>
+                <div className= "BreakTimer">
+                    <p>Break Time:</p>
+                    <input type="number" value={this.state.breakMinutes} onChange={this.onBreakMinsChange}></input>
+                    </div>
                 <TaskList></TaskList>
             </div>
         )
