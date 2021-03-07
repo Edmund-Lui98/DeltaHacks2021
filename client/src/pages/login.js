@@ -111,6 +111,7 @@ function Login() {
               color="primary"
               className={classes.submit}
               onClick={submitLogin}
+              href='/main'
             >
               Sign In
             </Button>

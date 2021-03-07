@@ -10,7 +10,7 @@ import Timer from "./pages/Timer";
 import "./App.css";
 import SignUp from "./pages/signup";
 
-import Timer from "./pages/Timer"
+import shop from "./pages/shop";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/" component={login} exact={true}/>
         <Route path="/main" component={Timer} />
         <Route path='/signup' component={SignUp} />
+        <Route path='/shop' component={shop} />
       </BrowserRouter>
     </MuiThemeProvider>
   );

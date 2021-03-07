@@ -3,6 +3,12 @@
 }
 
 .timer{
-    background-color: rgb(69, 86, 143);
+    background-color: rgb(255, 255, 255);
     padding-top: 200px;
+    font-size:xx-large;
+}
+
+.backgroundColor{
+    background-color: rgb(255, 255, 255);
+
 }
