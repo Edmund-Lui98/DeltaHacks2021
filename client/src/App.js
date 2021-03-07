@@ -10,6 +10,8 @@ import Timer from "./pages/Timer";
 import "./App.css";
 import SignUp from "./pages/signup";
 
+import Timer from "./pages/Timer"
+
 function App() {
   return (
     <MuiThemeProvider theme={theme}>

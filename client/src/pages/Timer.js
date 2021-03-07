@@ -1,6 +1,8 @@
 import SelectInput from "@material-ui/core/Select/SelectInput";
 import React, { Component } from "react";
 import TaskList from "./TaskList";
+import TimerStyle from "./design.css";
+
 class Timer extends Component {
     constructor(props) {
         super(props);
@@ -89,9 +91,10 @@ class Timer extends Component {
     }
 
     render() {
+
         return (
-            <div>
-                <h1>Time: {this.state.minutes < 10 ? `0${this.state.minutes}` : this.state.minutes}:{this.state.seconds < 10 ? `0${this.state.seconds}` : this.state.seconds}</h1>
+            <div className= "temp">
+                <h1 className= "timer">Time: {this.state.minutes < 10 ? `0${this.state.minutes}` : this.state.minutes}:{this.state.seconds < 10 ? `0${this.state.seconds}` : this.state.seconds}</h1>
                 <button onClick={this.startTimer}>Study</button>
                 <button onClick={this.resetTimer}>Reset</button>
                 <p>Study Time:</p><input type="number" value={this.state.studyMinutes} onChange={this.onStudyMinsChange}></input>

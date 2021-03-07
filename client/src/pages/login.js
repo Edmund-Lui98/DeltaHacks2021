@@ -1,15 +1,17 @@
-import { FormControl, TextField, Button, Typography, Avatar, CssBaseline, FormControlLabel, Checkbox, Link, Paper, Box, Grid} from "@material-ui/core";
+import { FormControl, TextField, Button, Typography, Avatar, CssBaseline, FormControlLabel, Checkbox, Link, Paper, Box, Grid, colors} from "@material-ui/core";
 
 import React, { useState, useEffect } from "react";
 
 import { makeStyles } from '@material-ui/core/styles';
 import SignUp from "./signup";
 import { Route, useHistory } from "react-router-dom";
+import color from "@material-ui/core/colors/amber";
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
       height: '100vh',
+      // background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
     },
     image: {
       backgroundImage: 'url(/Picture.png)',
