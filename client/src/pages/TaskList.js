@@ -49,8 +49,8 @@ class TaskList extends Component {
                 
                 <form onSubmit={this.addTask}>
                     Task Name: <input type="text" placeholder="Input Name" name="taskName"></input>
-                     Estimated Time (minutes): <input type="number" placeholder="Minutes" name="taskDuration"></input>
-                        <button>Add Task</button>
+                     <div className="estTime"> Estimated Time (minutes): <input type="number" placeholder="Minutes" name="taskDuration"></input></div>
+                        <button className = "ListBtn">Add Task</button>
                 </form>
                 {this.state.error && <p>{this.state.error}</p>}
                 {

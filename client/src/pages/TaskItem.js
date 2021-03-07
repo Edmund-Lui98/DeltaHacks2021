@@ -9,9 +9,10 @@ class TaskItem extends Component {
         return (
             <div>
                 <h4>
-                    {this.props.taskName}.....
-                    {this.props.taskDuration}...
-                    <button onClick={(e) => {
+                    {this.props.taskName}
+                    <div className="estTime">
+                    {this.props.taskDuration} </div>
+                    <button className = "ListBtn" onClick={(e) => {
                         this.props.completeTask({
                             taskName: this.props.taskName,
                             taskDuration: this.props.taskDuration

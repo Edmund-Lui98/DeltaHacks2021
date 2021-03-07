@@ -28,7 +28,7 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button href="/">Login/Sign Up</Button>
+                <button className="backBtn" href="/">Login/Sign Up</button>
             </nav>
         )
     }
