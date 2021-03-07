@@ -8,6 +8,7 @@ import login from "./pages/login";
 import Timer from "./pages/Timer";
 
 import "./App.css";
+import SignUp from "./pages/signup";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Route path="/" component={login} exact={true}/>
         <Route path="/main" component={Timer} />
+        <Route path='/signup' component={SignUp} />
       </BrowserRouter>
     </MuiThemeProvider>
   );
