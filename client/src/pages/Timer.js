@@ -1,7 +1,9 @@
 import SelectInput from "@material-ui/core/Select/SelectInput";
 import React, { Component } from "react";
 import TaskList from "./TaskList";
-import TimerStyle from "./design.css";
+import TimerStyle from "./design.css"; 
+import { makeStyles } from "@material-ui/core";
+import Navbar from "../components/Navbar";
 
 class Timer extends Component {
     constructor(props) {
@@ -93,6 +95,9 @@ class Timer extends Component {
     render() {
 
         return (
+
+          <div>
+            <Navbar></Navbar>
             <div className= "temp">
                 <h1 className= "timer">{this.state.minutes < 10 ? `0${this.state.minutes}` : this.state.minutes}:{this.state.seconds < 10 ? `0${this.state.seconds}` : this.state.seconds}</h1>
                 <button className= "StartTimer" onClick={this.startTimer}>
@@ -109,6 +114,8 @@ class Timer extends Component {
                     </div>
                 <TaskList></TaskList>
             </div>
+
+            
         )
     }
 }
