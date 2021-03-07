@@ -90,10 +90,6 @@ class Timer extends Component {
         this.setState(() => ({ breakMinutes }));
     }
 
-
-
-
-
     render() {
 
         return (
