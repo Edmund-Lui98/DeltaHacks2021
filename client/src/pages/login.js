@@ -1,6 +1,7 @@
 import { FormControl, TextField, Button, Typography, Avatar, CssBaseline, FormControlLabel, Checkbox, Link, Paper, Box, Grid} from "@material-ui/core";
 
 import React, { useState, useEffect } from "react";
+
 import { makeStyles } from '@material-ui/core/styles';
 import SignUp from "./signup";
 import { Route, useHistory } from "react-router-dom";
@@ -11,8 +12,7 @@ const useStyles = makeStyles((theme) => ({
       height: '100vh',
     },
     image: {
-      backgroundImage: 'url(https://source.unsplash.com/random)',
-      backgroundRepeat: 'no-repeat',
+      backgroundImage: 'url(/Picture.png)',
       backgroundColor:
         theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
       backgroundSize: 'cover',
